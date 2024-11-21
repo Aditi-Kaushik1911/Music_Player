@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <h1>🎵 Music Player 🎶</h1>
+        <div class="display">
+            <h2 id="song-title">Select a Song</h2>
+            <img id="cover" src="cover-placeholder.png" alt="Song Cover">
+        </div>
+        <div class="controls">
+            <button id="prev" title="Previous Song">⏮️</button>
+            <button id="play-pause" title="Play/Pause">▶️</button>
+            <button id="next" title="Next Song">⏭️</button>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">00:00</span>
+            <input type="range" id="progress-bar" value="0" step="1">
+            <span id="duration">00:00</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

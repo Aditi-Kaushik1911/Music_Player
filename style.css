@@ -1,0 +1,75 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.music-player {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 5px black;
+}
+
+.display img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.controls button {
+    background: #444;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    margin: 0 5px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+    background: #666;
+    transform: scale(1.1);
+}
+
+#progress-bar {
+    width: 70%;
+    margin: 10px 0;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current-time, #duration {
+    font-size: 14px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #fff;
+    }
+    to {
+        box-shadow: 0 0 15px #fff;
+    }
+}
